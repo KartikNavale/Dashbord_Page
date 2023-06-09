@@ -1,0 +1,396 @@
+ 
+  body {
+    background-color: rgba(211, 211, 211, 0.925);
+ 
+  }
+  .last {
+ background-color: white;
+  }
+  
+  .box {
+    /* display: grid; */
+    grid-template-rows: 1fr auto;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    height: 190px;
+    padding: 20px;
+    border-radius: 10px;
+  
+  }
+
+.firstdiv {
+  margin: 20px;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
+}
+
+  .firstdiv1 {
+    display: flex; width: 100%; justify-content: space-between;
+    
+    
+  }
+  
+  .numbers {
+    /* display: grid; */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 180px;
+     /* align-items: center; */
+     /* justify-content: center; */
+    font-size: xx-large;
+    font-weight: bold;
+    color: grey;
+    text-align: center;
+  }
+  .light-text {
+    font-size: small;
+    font-weight: normal;
+    color: rgba(128, 128, 128, 0.596);
+    text-align: center;
+    margin: 0px;
+  }
+  .main-text {
+    margin: 0;
+    height: 40px;
+  }
+  
+  .number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+  }
+
+  .btnmain {
+    padding: 10px;
+    display: flex; justify-content: center;
+  }
+  .btn {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background-color: #007bff;
+    color: white;
+    /* padding: 5px 10px; */
+    border: none;
+    font-size: x-small;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  .btn2 {
+        display: flex;
+    float: right;
+    /* background-color: white; */
+    border: 1px solid grey;
+    color: grey;
+    /* padding: 5px 10px; */
+    border: none;
+    font-size: x-small;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #0000;
+    height: 21px;
+  }
+  /* .chart {
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  } */
+  .divmain {
+    width: 100%; display: flex; 
+    padding: 15px;
+  }
+  .diva {
+    width: 50%; background-color: white;
+     margin-right: 10px;
+  }
+  .divb {
+    width: 50%; background-color: #ffff;
+    margin-right: 10px;
+  }
+.taskbar {
+  background-color: whitesmoke;
+}
+
+  .chartdiv {
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+    place-items: center;
+    margin-top: 15px;
+    padding: 0!important;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+ 
+  }
+
+  .chartdiv2 {
+    width: 25%;
+    /* background-color: white; */
+    padding: 10px;
+    padding-top: 10px;
+  
+  }
+  .chartcanvas {
+    width:100%;max-width:600px; background-color: white; padding: 5px;
+    margin: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
+  }
+  .flag {
+    width: 16px; height: 13px;
+  }
+  .flag2{
+    width: 20px; height: 20px;
+  }
+
+  /* Task list */
+  .task-container {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .task-btn {
+    background-color:#007bff!important;
+    border: 1px solid #007bff!important;
+  }
+  
+  .task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .cancelbtn {
+    border: none; background-color: white; color: rgb(0, 30, 255); padding: 10px;
+  }
+  .submitbtn {
+    background-color: rgb(0, 30, 255); color: white; border: 1px solid rgb(0, 30, 255); border-radius: 4px; padding: 5px 15px;
+  }
+
+  .tableform {
+    align-items: end;  
+  }
+      /* Four chart */
+ 
+
+    .chartdiv2 {
+        flex: 0 0 50%;
+        max-width: 25%;
+        padding: 10px;
+    }
+    .maincomments{
+      margin: 5px;
+    border: 2px solid rgba(128, 128, 128, 0.297);  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    height: 380px;
+    } 
+
+    .comment-box {
+      border: 1px solid rgba(0, 0, 0, 0.21);
+      padding: 20px;
+      box-sizing: border-box;
+      margin: 5px;
+      border-radius: 5px;
+    }
+
+    .comment-box textarea {
+      width: 100%;
+      height: 100%;
+      resize: none;
+      border: none;
+      outline: none;
+      font-size: 16px;
+    }
+    .comments {
+      padding: 10px;
+    }
+
+    .comment {
+      /* margin-bottom: 10px;
+      padding-bottom: 5px; */
+      margin: 10px;
+      border-bottom: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    #myChart1, #myChart2, #myChart3, #myChart4 {
+        width: 100%;
+        max-width: 600px;
+    }
+     /* chat box start */
+     .chat-container {
+      margin: 0 auto;
+      border-radius: 10px;
+      /* overflow: hidden; */
+      /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+    }
+    .chat-body {
+      padding: 10px;
+      /* background-color: #f4f4f4; */
+      height: 300px;
+      overflow-y: scroll;
+      /* overflow: hidden; */
+    }
+    
+    .message {
+      margin-bottom: 10px;
+      display: flex;
+    }
+    
+    .message.outgoing {
+      justify-content: flex-end;
+      
+    }
+    
+    .message.incoming {
+      justify-content: flex-start;
+      
+    }
+    
+    .message .content {
+      max-width: 70%;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      word-wrap: break-word;
+      background-color: rgba(135, 207, 235, 0.553);
+    }
+    
+    .chat-footer {
+      /* background-color: #f4f4f4; */
+      margin: 5px;
+      padding: 10px;
+      display: flex;
+    }
+    
+    .chat-footer input[type="text"] {
+      flex-grow: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      outline: none;
+    }
+    
+    .chat-footer button {
+      margin-left: 10px;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      outline: none;
+    }
+    
+    .chat-footer button:hover {
+      background-color: #0069d9;
+    }
+    /* chat box end */
+
+    @media (max-width:280px) {
+      .divmain {
+        font-size: x-small;
+      }
+      .tclass {
+        font-size: x-small;
+      }
+      .lclass {
+        font-size: x-small;
+      }
+      .body {
+        align-items: center;
+      }
+    .light-text {
+      font-size: 5px;
+    }
+    .numbers {
+      font-size: small;
+    }
+    .flag2 {
+      width: 10px; height: 10px;
+    }
+ 
+    }
+
+    @media (max-width: 768px) {
+        .chartdiv2 {
+            flex: 0 0 100%;
+            max-width: 100%;
+            
+        }
+        
+        .divmain {
+          flex-direction: column;
+          align-items: center;
+        }
+        .diva {
+          width: 100%;
+          margin-bottom: 5px;
+        }
+        .divb {
+          width: 100%;
+          margin-top: 5px;
+        }
+        .m-5 {
+          margin: 0px!important;
+        }
+        .light-text {
+          font-size: 10px;
+        }
+        .numbers {
+          font-size: x-large;
+        }
+        .flag2 {
+          width: 15px; height: 15px;
+        }
+    }
+    /* Four chart end */
+  /* List */
+  @media (max-width: 768px) {
+    table {
+      font-size: 14px;
+    }
+
+    .flag {
+      width: 20px;
+      height: 20px;
+    }
+
+    .pagination {
+      flex-wrap: wrap;
+    }
+    .color-num {
+      margin-top: 20px;
+    }
+    .color-num2 {
+      margin-bottom: 15px;
+    }
+
+    .tableform {
+      .tableform {
+        margin-top: 10px;
+        align-self: flex-end;
+      }
+    }
+  }
+  /* list end */
+
+ 
+
+

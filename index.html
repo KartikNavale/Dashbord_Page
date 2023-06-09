@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <!-- <div style="width: 20%; float: left;">
+    <p>1</p>
+  </div> -->
+  <!-- <div style="width: 80%; float: right;"> -->
+  <div class="firstdiv">
+   <div class="firstdiv1">
+    <p>Portfolio performance / <span id="demo" class="light-text"></span></p>
+    <button class="btn2">View All</button>
+   </div>
+    <div style="display: grid; grid-template-columns: repeat(3,1fr);">
+      <div class="numbers">
+        <p class="light-text">Cash Deposots</p><p class="main-text"><span><img src="computer.png" alt="" class="flag2"></span> 1.7M</p><p class="light-text"><span style="color: rgb(250, 52, 85);">>54.1% </span>less Earning</p>
+      </div>
+      <div class="numbers"><p class="light-text">Invisted Divedent</p><p class="main-text"><span><img src="pink.jpg" alt="" class="flag2"></span> 9M</p><p class="light-text">Grow Rate <span style="color:rgb(78, 148, 246)">>14.1% </span></p></div>
+      <div class="numbers"><p class="light-text">Captial Gains</p><p style="color: rgb(11, 161, 11)" class="main-text"><span><img src="green.jpg" alt="" class="flag2"></span> $563</p><p class="light-text">Incresed by <span style="color: rgb(255, 226, 5)">7.35% </span></p></div>
+    </div>
+   <div class="btnmain">
+    <button class="btn">View Complete Report</button>
+   </div>
+  </div>
+  
+   <div class="divmain">
+    <div class="diva">
+        <!-- <div>
+            <div>
+              <div> -->
+                <div style="padding: 10px;">
+                <canvas id="myChart"></canvas>
+                <!-- <p>list</p> -->
+                <div style="margin: 10px;">
+                <p>Total orders</p>
+                  <div class="progress" style="height: 12px;">
+                  d
+                </div>
+                </div>
+             <!-- </div>
+            </div>
+            </div> -->
+          </div>
+  
+  </div>
+  <div class="divb">
+    <div class="maincomments">
+    <div class="comment-box">
+      <textarea placeholder="Leave a comment"></textarea>
+    </div>
+  
+    <div class="comments">
+      <div class="comment">
+        <strong>John:</strong> This is a great article! <span class="badge bg-primary">New</span>
+      </div>
+      <div class="comment">
+        <strong>Sarah:</strong> I have a question about the second paragraph.
+      </div>
+      <div class="comment">
+        <strong>Mich:</strong> Thanks for sharing this valuable information.
+      </div>
+      <div class="comment">
+        <strong>James:</strong> Valuable information.
+      </div>
+      <div class="comment">
+        <strong>Tom:</strong> Thanks. <span class="badge bg-primary">New</span>
+      </div>
+      <div class="comment">
+        <strong>Domnic:</strong> This is a great article!
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="chartdiv ">
+    <div class="chartdiv2">  <canvas id="myChart1" class="chartcanvas"></canvas></div>
+    <div class="chartdiv2">  <canvas id="myChart2" class="chartcanvas"></canvas></div>
+    <div class="chartdiv2">  <canvas id="myChart3" class="chartcanvas"></canvas></div>
+    <div class="chartdiv2">  <canvas id="myChart4" class="chartcanvas"></canvas></div>
+    </div>
+
+    <!-- List -->
+     <div style="margin: 10px;" class="bg-white p-1">
+    <table class="table bg-white mt-3 tclass">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Country</th>
+          <th scope="col">Area</th>
+          <th scope="col">Population</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td><span><img src="russia.png" alt="" class="flag"></span> Russia</td>
+          <td>17,075,200</td>
+          <td>146,989,754</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td><span><img src="france.png" alt="" class="flag"></span> France</td>
+          <td>640,679</td>
+          <td>64,979,548</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td><span><img src="german.png" alt="" class="flag"></span> Germany</td>
+          <td>640,679</td>
+          <td>64,979,548</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td><span><img src="pourtugal.png" alt="" class="flag"></span> Portugal</td>
+          <td>92,090</td>
+          <td>10,329,506</td>
+        </tr>
+ 
+      </tbody>
+    </table>
+  
+    
+      <nav class="list" aria-label="Page navigation example">
+        <ul class="pagination ms-3 lclass">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+         <!-- <form class="tableform">
+            <select name="pages">
+                <option value="page 1">4 item per page</option>
+                <option value="page 2">5 iten per page</option>
+                <option value="page 3">6 item per page</option>
+            </select>
+        </form> -->
+        </ul>
+
+      </nav>
+    </div>
+
+    <div class="divmain">
+      <div class="diva"> 
+        <div class="taskbar">
+        <div style="height: 40px; margin-left: 30px; font-size: large;"><span><img src="task logo.png" alt="" class="flag"></span> Task List</div>
+      </div>
+         <div class="task-container">
+        <ul class="task-list list-group">
+          <li class="task">
+            <input type="checkbox">
+            Wash the car
+            <span class="badge bg-danger">Rejected</span>
+          </li>
+          <li class="task">
+            <input type="checkbox">
+            Task with dropdown menu
+            <span class="badge bg-primary">New</span>
+          </li>
+        
+          <li class="task"><input type="checkbox">  Badge on the right task</li>
+          <li class="task"><input type="checkbox"> Go grocery shopping</li>
+          <li class="task"><input type="checkbox"> Wash the car</li>
+          <li class="task"><input type="checkbox"> Badge on the right task</li>
+
+        </ul>
+      </div>
+       <div>
+        <p style="float: right; margin-right: 10px;">
+          <button type="submit" class="cancelbtn">cancel</button>
+        <button type="submit" class="submitbtn task-btn">Add Task</button>
+    </p>
+       </div>
+    </div>
+      <div class="divb">
+        <div class="taskbar">
+          <div style="height: 40px; margin-left: 30px; font-size: large;"><span><img src="chatbox.jpg" alt="" class="flag"></span> Chat Box</div>
+        </div>
+        <div class="chat-container">
+          <div class="chat-body">
+            <div class="message outgoing">
+              <p class="content">But i must explain to you how all this mistaken
+                  idea of denouching plesure</p>
+            </div>
+            <div class="message incoming">
+              <p class="content">Expound the actual teaching of the great exploreof the truth</p>
+            </div>
+            <div class="message outgoing">
+              <p class="content">But i must explain to you how all this mistaken
+                  idea of denouching</p>
+            </div>
+            <!-- Additional messages go here -->
+            <div class="message outgoing">
+              <p class="content">But i must explain to you how all this mistaken
+                  idea of denouching</p>
+            </div>
+            <div class="message incoming">
+              <p class="content">Expound the actual teaching of the great exploreof the truth</p>
+            </div>
+            <div class="message outgoing">
+              <p class="content">But i must explain to you how all this mistaken
+                  idea of denouching</p>
+            </div>
+          </div>
+          <div class="chat-footer">
+            <input type="text" placeholder="Type your message...">
+            <button>Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Row columns -->
+<!-- container -->
+    <!-- <div  class=" text-left bg-white" style="margin: 30px;"> -->
+      <div class="row row-cols-3 m-3 last">
+        <div class="col border-bottom d-flex" style="flex-wrap: wrap;"><div class="ms-3 m-2">
+         <p class="fw-bold">Total Orders <br> <span class="text-muted fw-lighter">Last years expenses</span></p>
+        </div>
+        <div class="fs-4 p-3 fw-bolder col text-success text-end" style="width: fit-content;">1896</div>
+         </div>
+         <div class="col d-flex border-bottom" style="flex-wrap: wrap;"><div class="ms-3 m-2">
+          <p class="fw-bold">Followres <br> <span class="text-muted fw-lighter">People Intrested</span></p>
+         </div>
+         <div class="fs-4 p-3 fw-bolder col text-danger text-end color-num">45,9%</div>
+          </div>
+          <div class="col d-flex border-bottom" style="flex-wrap: wrap;"><div class="ms-3 m-2">
+            <p class="fw-bold">Total Orders <br> <span class="text-muted fw-lighter">Last years expenses</span></p>
+           </div>
+           <div class="fs-4 p-3 fw-bolder col text-success text-end">1896</div>
+            </div>
+            <div class="col d-flex border-bottom" style="flex-wrap: wrap;"><div class="ms-3 m-2">
+              <p class="fw-bold">Clients <br> <span class="text-muted fw-lighter">Total client profit</span></p>
+             </div>
+             <div class="fs-4 p-3 fw-bolder col text-primary text-end">$12.6k</div>
+              </div>
+              <div class="col d-flex border-bottom" style="flex-wrap: wrap;"><div class="ms-3 m-2">
+                <p class="fw-bold">Product Sold <br> <span class="text-muted fw-lighter">Total revenue streams</span></p>
+               </div>
+               <div class="fs-4 p-3 fw-bolder col text-success text-warning text-end color-num2">$3M</div>
+                </div>
+                <div class="col d-flex border-bottom" style="flex-wrap: wrap;"><div class="ms-3 m-2">
+                  <p class="fw-bold">Clients <br> <span class="text-muted fw-lighter">Total client profit</span></p>
+                 </div>
+                 <div class="fs-4 p-3 fw-bolder col text-success text-end">$12.6k</div>
+                  </div>
+      </div>
+    <!-- </div> -->
+
+    
+  <script>
+    const zValues = [50,60,70,80,90,100,110,120,130,140,150];
+    const yValues = [7,8,8,9,9,9,10,11,14,14,15];
+    
+    new Chart("myChart", {
+      type: "line",
+      data: {
+        labels: zValues,
+        datasets: [{
+          fill: false,
+          lineTension: 0,
+          backgroundColor: "rgba(0,0,255,1.0)",
+          borderColor: "rgba(0,0,255,0.1)",
+          data: yValues
+        }]
+      },
+      options: {
+        legend: {display: false},
+        scales: {
+          yAxes: [{ticks: {min: 6, max:16}}],
+        }
+      }
+    });
+    const sValues = [50,60,70,80,90,100,110,120,130,140,150];
+    const vValues = [7,8,8,9,9,9,10,11,14,14,15];
+    
+    new Chart("byChart", {
+      type: "line",
+      data: {
+        labels: zValues,  
+        datasets: [{
+          fill: false,
+          lineTension: 0,
+          backgroundColor: "rgba(0,0,255,1.0)",
+          borderColor: "rgba(0,0,255,0.1)",
+          data: yValues
+        }]
+      },
+      options: {
+        legend: {display: false},
+        scales: {
+          yAxes: [{ticks: {min: 6, max:16}}],
+        }
+      }
+    });
+
+    // 2nd chart
+    const xValues = [100,200,300,400,500,600,700,800,900,1000];
+
+// Chart 1
+new Chart("myChart1", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{ 
+      data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
+      borderColor: "red",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
+  }
+});
+
+// Chart 2
+new Chart("myChart2", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{ 
+      data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
+      borderColor: "green",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
+  }
+});
+
+// Chart 3
+new Chart("myChart3", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{ 
+      data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+      borderColor: "blue",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
+  }
+});
+
+    // Chart 4
+    new Chart("myChart4", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{ 
+      data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
+      borderColor: "yellow",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
+  }
+});
+
+// time
+setInterval(myFunction, 1000);
+        
+        function myFunction() {
+          let d = new Date();
+          document.getElementById("demo").innerHTML=
+          d.getHours() + ":" +
+          d.getMinutes() + ":" +
+          d.getSeconds();
+        }
+    </script>
+    
+</body>
+</html>
